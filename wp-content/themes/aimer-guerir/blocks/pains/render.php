@@ -26,9 +26,7 @@ if (
 	count($items) === 0 ||
 	! $image_id ||
 	'' === $primary_label ||
-	'' === $primary_url ||
-	'' === $secondary_label ||
-	'' === $secondary_url
+	'' === $primary_url
 ) {
 	return '';
 }

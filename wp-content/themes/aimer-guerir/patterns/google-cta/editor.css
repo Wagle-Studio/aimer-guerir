@@ -1,0 +1,59 @@
+/* Masquer le contenu brut des blocs HTML (icône SVG + bouton) */
+.editor-styles-wrapper .pattern_google_cta .wp-block-html figure,
+.editor-styles-wrapper .pattern_google_cta .wp-block-html svg,
+.editor-styles-wrapper .pattern_google_cta .wp-block-html .pattern_google_cta__actions {
+  display: none;
+}
+
+/* Remplacer par un placeholder lisible */
+.editor-styles-wrapper .pattern_google_cta .wp-block-html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 60px;
+  padding: 16px 24px;
+  border: 2px dashed rgba(164, 0, 39, 0.3);
+  border-radius: 6px;
+  background-color: rgba(164, 0, 39, 0.03);
+  text-align: center;
+}
+
+.editor-styles-wrapper .pattern_google_cta .wp-block-html:first-child::before {
+  content: "Icône Google";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(164, 0, 39, 0.7);
+}
+
+.editor-styles-wrapper .pattern_google_cta .wp-block-html:first-child::after {
+  content: "Le logo Google s'affiche automatiquement sur le site.";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.editor-styles-wrapper .pattern_google_cta__actions + .wp-block-html::before,
+.editor-styles-wrapper .pattern_google_cta .wp-block-html:last-child::before {
+  content: "Bouton — Déposer un avis Google";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(164, 0, 39, 0.7);
+}
+
+.editor-styles-wrapper .pattern_google_cta .wp-block-html:last-child::after {
+  content: "Le bouton avec l'icône Google s'affiche sur le site. Modifier l'URL dans le bloc HTML pour pointer vers votre page d'avis Google.";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 460px;
+}

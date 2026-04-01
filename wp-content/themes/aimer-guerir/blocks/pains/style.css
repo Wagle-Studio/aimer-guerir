@@ -78,6 +78,11 @@
   }
 }
 
+.pains__actions-tagline {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .pains_actions_tag_line {
   max-width: 80%;
   margin: 0 auto;

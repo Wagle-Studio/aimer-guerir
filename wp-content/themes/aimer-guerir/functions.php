@@ -367,6 +367,7 @@ add_action('wp_enqueue_scripts', function () {
 			'aimer-guerir-pattern-temoignages-categories' => 'patterns/temoignages-categories/style.css',
 			'aimer-guerir-pattern-social-links'           => 'patterns/social-links/style.css',
 			'aimer-guerir-pattern-faq-accordion'          => 'patterns/faq-accordion/style.css',
+			'aimer-guerir-pattern-google-cta'             => 'patterns/google-cta/style.css',
 		];
 
 		$prev = [];
@@ -892,28 +893,70 @@ add_shortcode('temoignages_categories', 'temoignages_categories_shortcode');
 // ─────────────────────────────────────────────────────────────────────────────
 function articles_categories_shortcode(): string
 {
-	$terms = get_terms(['taxonomy' => 'category', 'hide_empty' => true]);
-
-	if (empty($terms) || is_wp_error($terms)) {
-		return '';
-	}
-
-	$placeholder = get_theme_file_uri('assets/images/pattern-placeholder-400.svg');
+	$uncat = get_category_by_slug('articles-non-classes');
+	$uncat = ($uncat && !is_wp_error($uncat)) ? $uncat : false;
 
 	ob_start();
-	echo '<div class="pattern_blog_posts_categories__grid">';
-	foreach ($terms as $term) {
-		$image_id  = (int) get_term_meta($term->term_id, '_article_cat_image_id', true);
-		$image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : $placeholder;
-		$term_url  = get_term_link($term);
-		echo '<a href="' . esc_url($term_url) . '" class="pattern_blog_posts_categories__card">';
-		echo '<div class="pattern_blog_posts_categories__card_image">';
-		echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($term->name) . '">';
-		echo '</div>';
-		echo '<p class="pattern_blog_posts_categories__card_name">' . esc_html($term->name) . '</p>';
-		echo '</a>';
+
+	// Liste des articles non classés
+	if ($uncat && $uncat->count > 0) {
+		$query = new WP_Query([
+			'cat'            => $uncat->term_id,
+			'posts_per_page' => -1,
+			'post_status'    => 'publish',
+		]);
+		if ($query->have_posts()) {
+			echo '<div class="articles-cat-list">';
+			while ($query->have_posts()) {
+				$query->the_post();
+				$permalink = get_permalink();
+				$title     = get_the_title();
+				echo '<article class="articles-cat-card">';
+				echo '<div class="articles-cat-card__image' . (has_post_thumbnail() ? '' : ' articles-cat-card__image--placeholder') . '">';
+				if (has_post_thumbnail()) {
+					echo '<a href="' . esc_url($permalink) . '" tabindex="-1" aria-hidden="true">';
+					the_post_thumbnail('medium_large', ['alt' => esc_attr($title)]);
+					echo '</a>';
+				}
+				echo '</div>';
+				echo '<div class="articles-cat-card__body">';
+				echo '<h2 class="articles-cat-card__title"><a href="' . esc_url($permalink) . '">' . esc_html($title) . '</a></h2>';
+				echo '<time class="articles-cat-card__date" datetime="' . esc_attr(get_the_date('Y-m-d')) . '">' . esc_html(get_the_date('j F Y')) . '</time>';
+				echo '<p class="articles-cat-card__excerpt">' . wp_trim_words(get_the_excerpt(), 20, '…') . '</p>';
+				echo '<a href="' . esc_url($permalink) . '" class="articles-cat-card__btn btn btn--primary">Lire l\'article</a>';
+				echo '</div>';
+				echo '</article>';
+			}
+			echo '</div>';
+		}
+		wp_reset_postdata();
 	}
-	echo '</div>';
+
+	// Grille des catégories (hors "Non classé")
+	$terms = get_terms([
+		'taxonomy'   => 'category',
+		'hide_empty' => true,
+		'exclude'    => $uncat ? [$uncat->term_id] : [],
+	]);
+
+	if (!is_wp_error($terms) && !empty($terms)) {
+		$placeholder = get_theme_file_uri('assets/images/pattern-placeholder-400.svg');
+		echo '<div class="pattern_blog_posts_categories__header"><h3 class="pattern_blog_posts_categories__title">Articles par catégories</h3></div>';
+		echo '<div class="pattern_blog_posts_categories__grid">';
+		foreach ($terms as $term) {
+			$image_id  = (int) get_term_meta($term->term_id, '_article_cat_image_id', true);
+			$image_url = $image_id ? wp_get_attachment_image_url($image_id, 'medium') : $placeholder;
+			$term_url  = get_term_link($term);
+			echo '<a href="' . esc_url($term_url) . '" class="pattern_blog_posts_categories__card">';
+			echo '<div class="pattern_blog_posts_categories__card_image">';
+			echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($term->name) . '">';
+			echo '</div>';
+			echo '<p class="pattern_blog_posts_categories__card_name">' . esc_html($term->name) . '</p>';
+			echo '</a>';
+		}
+		echo '</div>';
+	}
+
 	return ob_get_clean();
 }
 add_shortcode('articles_categories', 'articles_categories_shortcode');
@@ -1195,7 +1238,9 @@ add_action('wp_footer', function () {
 });
 
 add_action('wp_footer', function () {
-	if (!is_category()) return;
+	global $post;
+	$has_shortcode = $post && has_shortcode($post->post_content, 'articles_categories');
+	if (!is_category() && !$has_shortcode) return;
 	echo '<style>
 .articles-cat-archive {
 	width: 100%;
@@ -1205,7 +1250,7 @@ add_action('wp_footer', function () {
 }
 .articles-cat-archive__back-wrapper {
 	position: sticky;
-	top: 193px;
+	top: 161px;
 	z-index: 10000;
 	width: 100%;
 	margin: 0 auto;
@@ -1260,6 +1305,12 @@ add_action('wp_footer', function () {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+.pattern_blog_posts_categories .articles-cat-list {
+	max-width: 1280px;
+	width: 100%;
+	padding: 0 24px;
+	margin: 0 auto 48px;
 }
 .articles-cat-card {
 	display: flex;

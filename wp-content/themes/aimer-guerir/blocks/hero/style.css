@@ -23,6 +23,11 @@
   gap: 8px;
 }
 
+.hero__subtitle {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .hero_header_subtitle {
   color: var(--primary);
   font-family: var(--font-body);

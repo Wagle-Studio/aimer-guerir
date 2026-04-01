@@ -46,6 +46,7 @@ SOURCES=(
   "$THEME_DIR/patterns/social-links/style.css"
   "$THEME_DIR/patterns/contenu-editorial/style.css"
   "$THEME_DIR/patterns/faq-accordion/style.css"
+  "$THEME_DIR/patterns/google-cta/style.css"
 )
 
 {

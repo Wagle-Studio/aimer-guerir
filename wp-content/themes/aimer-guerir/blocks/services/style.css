@@ -4,6 +4,7 @@
   align-items: center;
   padding: 120px 0;
   gap: 80px;
+  background-color: var(--background);
 }
 
 .services__wrapper {

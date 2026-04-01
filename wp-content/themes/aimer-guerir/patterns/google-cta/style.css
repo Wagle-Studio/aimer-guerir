@@ -1,0 +1,75 @@
+/* Section racine */
+.pattern_google_cta {
+  background-color: var(--background);
+}
+
+/* Wrapper centré */
+.pattern_google_cta__wrapper {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+/* Badge Google */
+.pattern_google_cta__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pattern_google_cta__badge svg {
+  width: 48px;
+  height: 48px;
+}
+
+.pattern_google_cta__rating {
+  font-size: 0.9rem;
+  color: var(--black);
+  margin: 0;
+}
+
+.pattern_google_cta__stars {
+  color: #FBBC05;
+}
+
+/* Texte éditorial */
+.pattern_google_cta__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pattern_google_cta__intro {
+  font-style: italic;
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.pattern_google_cta__body {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.pattern_google_cta__body a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.pattern_google_cta__signature {
+  font-family: var(--font-heading);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.pattern_google_cta__actions {
+  display: flex;
+  justify-content: center;
+}

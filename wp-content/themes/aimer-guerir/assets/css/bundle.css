@@ -21,7 +21,8 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -29,7 +30,8 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -37,7 +39,8 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf")
+    format("truetype");
   font-weight: 400 900;
   font-style: italic;
   font-display: swap;
@@ -50,21 +53,21 @@
   --font-body:
     "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-  --primary:    #a40027;
+  --primary: #a40027;
   --primary-05: #b7273c05;
   --primary-15: #b7273c15;
   --primary-25: #b7273c25;
   --primary-50: #b7273c50;
   --primary-75: #b7273c75;
 
-  --beige:      #e8e4df;
-  --cream:      #f5efe6;
-  --black:      #2d2926;
-  --white:      #fffdf9;
+  --beige: #e8e4df;
+  --cream: #f5efe6;
+  --black: #2d2926;
+  --white: #fffdf9;
   --background: #faf6f0;
 
   --picture-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.18);
-  --card-shadow:    0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  --card-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
   --header-height: 160px;
 }
@@ -252,7 +255,9 @@ button {
   font-weight: 600;
   text-align: center;
   width: 100%;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .btn:hover {
@@ -352,7 +357,12 @@ table {
   border: 2px solid var(--primary);
   background: var(--primary);
   color: var(--white);
-  transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    background-color 0.1s ease,
+    color 0.1s ease,
+    border-color 0.1s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .wp-block-button__link:hover {
@@ -413,7 +423,7 @@ table {
   width: 100%;
   max-width: 980px;
   margin: 48px auto 0;
-  padding: 16px 0 12px;
+  padding: 16px 24px 12px;
   background-color: #faf9f6;
 }
 
@@ -1177,6 +1187,11 @@ html.js .site-nav.is-open .site-nav__menu {
   gap: 8px;
 }
 
+.hero__subtitle {
+  font-weight: 500;
+  font-style: italic;
+}
+
 .hero_header_subtitle {
   color: var(--primary);
   font-family: var(--font-body);
@@ -1336,6 +1351,11 @@ html.js .site-nav.is-open .site-nav__menu {
   .btn {
     width: 100%;
   }
+}
+
+.pains__actions-tagline {
+  font-weight: 500;
+  font-style: italic;
 }
 
 .pains_actions_tag_line {
@@ -1589,7 +1609,7 @@ html.js .site-nav.is-open .site-nav__menu {
 
 /* --- blocks/about/style.css --- */
 .about {
-  background-color: var(--cream);
+  background-color: var(--background);
 }
 
 .about__wrapper {
@@ -1749,8 +1769,12 @@ html.js .site-nav.is-open .site-nav__menu {
 }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .testimonials__list {
@@ -1847,7 +1871,6 @@ html.js .site-nav.is-open .site-nav__menu {
 
 /* --- blocks/choose-practitioner/style.css --- */
 .choose-practitioner {
-  background-color: var(--beige);
 }
 
 .choose-practitioner__wrapper {
@@ -1923,6 +1946,7 @@ html.js .site-nav.is-open .site-nav__menu {
   align-items: center;
   padding: 120px 0;
   gap: 80px;
+  background-color: var(--background);
 }
 
 .services__wrapper {
@@ -2193,7 +2217,9 @@ html.js .site-nav.is-open .site-nav__menu {
   border-radius: 3px;
   border: 1px solid var(--primary-50);
   background: var(--white);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .newsletter__input:focus {
@@ -2561,11 +2587,14 @@ img.pattern_about__image {
   text-align: justify;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-content > p:first-of-type {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-content
+  > p:first-of-type {
   font-weight: 600;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-content__title {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-content__title {
   position: relative;
   width: max-content;
   display: inline-flex;
@@ -2574,7 +2603,9 @@ img.pattern_about__image {
   margin-bottom: 16px;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-content__title span {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-content__title
+  span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2586,12 +2617,16 @@ img.pattern_about__image {
   flex: 0 0 auto;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-content__title span svg {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-content__title
+  span
+  svg {
   width: 18px;
   height: 18px;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-content__title::after {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-content__title::after {
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -2650,7 +2685,9 @@ img.pattern_about__image {
   transition: transform 0.4s ease;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-image:hover img {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-image:hover
+  img {
   transform: scale(1.04);
 }
 
@@ -2658,9 +2695,15 @@ img.pattern_about__image {
   margin-top: 24px;
 }
 
-.appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-buttons,
-.appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-button,
-.appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-button__link {
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-actions
+  .wp-block-buttons,
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-actions
+  .wp-block-button,
+.appointment-cta__session-band--clinic
+  .appointment-cta__session-actions
+  .wp-block-button__link {
   width: 100%;
   display: block;
   text-align: center;
@@ -2684,9 +2727,15 @@ img.pattern_about__image {
     grid-row: 1;
   }
 
-  .appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-buttons,
-  .appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-button,
-  .appointment-cta__session-band--clinic .appointment-cta__session-actions .wp-block-button__link {
+  .appointment-cta__session-band--clinic
+    .appointment-cta__session-actions
+    .wp-block-buttons,
+  .appointment-cta__session-band--clinic
+    .appointment-cta__session-actions
+    .wp-block-button,
+  .appointment-cta__session-band--clinic
+    .appointment-cta__session-actions
+    .wp-block-button__link {
     width: max-content;
     display: inline-block;
   }
@@ -2740,11 +2789,14 @@ img.pattern_about__image {
   text-align: justify;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-content > p:first-of-type {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-content
+  > p:first-of-type {
   font-weight: 600;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-content__title {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-content__title {
   position: relative;
   width: max-content;
   display: inline-flex;
@@ -2753,7 +2805,9 @@ img.pattern_about__image {
   margin-bottom: 16px;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-content__title span {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-content__title
+  span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2765,12 +2819,16 @@ img.pattern_about__image {
   flex: 0 0 auto;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-content__title span svg {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-content__title
+  span
+  svg {
   width: 18px;
   height: 18px;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-content__title::after {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-content__title::after {
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -2801,7 +2859,9 @@ img.pattern_about__image {
   transition: transform 0.4s ease;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-image:hover img {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-image:hover
+  img {
   transform: scale(1.04);
 }
 
@@ -2809,9 +2869,15 @@ img.pattern_about__image {
   margin-top: 24px;
 }
 
-.appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-buttons,
-.appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-button,
-.appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-button__link {
+.appointment-cta__session-band--distance
+  .appointment-cta__session-actions
+  .wp-block-buttons,
+.appointment-cta__session-band--distance
+  .appointment-cta__session-actions
+  .wp-block-button,
+.appointment-cta__session-band--distance
+  .appointment-cta__session-actions
+  .wp-block-button__link {
   width: 100%;
   display: block;
   text-align: center;
@@ -2835,9 +2901,15 @@ img.pattern_about__image {
     grid-row: 1;
   }
 
-  .appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-buttons,
-  .appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-button,
-  .appointment-cta__session-band--distance .appointment-cta__session-actions .wp-block-button__link {
+  .appointment-cta__session-band--distance
+    .appointment-cta__session-actions
+    .wp-block-buttons,
+  .appointment-cta__session-band--distance
+    .appointment-cta__session-actions
+    .wp-block-button,
+  .appointment-cta__session-band--distance
+    .appointment-cta__session-actions
+    .wp-block-button__link {
     width: max-content;
     display: inline-block;
   }
@@ -2884,7 +2956,9 @@ img.pattern_about__image {
   text-align: justify;
 }
 
-.appointment-cta__session-band--home .appointment-cta__session-content > p:first-of-type {
+.appointment-cta__session-band--home
+  .appointment-cta__session-content
+  > p:first-of-type {
   font-weight: 600;
 }
 
@@ -2897,7 +2971,9 @@ img.pattern_about__image {
   margin-bottom: 16px;
 }
 
-.appointment-cta__session-band--home .appointment-cta__session-content__title span {
+.appointment-cta__session-band--home
+  .appointment-cta__session-content__title
+  span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2909,12 +2985,16 @@ img.pattern_about__image {
   flex: 0 0 auto;
 }
 
-.appointment-cta__session-band--home .appointment-cta__session-content__title span svg {
+.appointment-cta__session-band--home
+  .appointment-cta__session-content__title
+  span
+  svg {
   width: 18px;
   height: 18px;
 }
 
-.appointment-cta__session-band--home .appointment-cta__session-content__title::after {
+.appointment-cta__session-band--home
+  .appointment-cta__session-content__title::after {
   position: absolute;
   bottom: -15px;
   left: 50%;
@@ -2953,9 +3033,15 @@ img.pattern_about__image {
   margin-top: 24px;
 }
 
-.appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-buttons,
-.appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-button,
-.appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-button__link {
+.appointment-cta__session-band--home
+  .appointment-cta__session-actions
+  .wp-block-buttons,
+.appointment-cta__session-band--home
+  .appointment-cta__session-actions
+  .wp-block-button,
+.appointment-cta__session-band--home
+  .appointment-cta__session-actions
+  .wp-block-button__link {
   width: 100%;
   display: block;
   text-align: center;
@@ -2979,9 +3065,15 @@ img.pattern_about__image {
     grid-row: 1;
   }
 
-  .appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-buttons,
-  .appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-button,
-  .appointment-cta__session-band--home .appointment-cta__session-actions .wp-block-button__link {
+  .appointment-cta__session-band--home
+    .appointment-cta__session-actions
+    .wp-block-buttons,
+  .appointment-cta__session-band--home
+    .appointment-cta__session-actions
+    .wp-block-button,
+  .appointment-cta__session-band--home
+    .appointment-cta__session-actions
+    .wp-block-button__link {
     width: max-content;
     display: inline-block;
   }
@@ -3092,7 +3184,9 @@ img.pattern_about__image {
   border-radius: 3px;
   border: 1px solid var(--primary-50);
   background: var(--white);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .pattern-newsletter .newsletter__input:focus {
@@ -3236,7 +3330,10 @@ img.pattern_about__image {
   box-shadow: none;
 }
 
-.appointment-about__sessions .appointment-about__session-card .appointment-about__session-link .wp-block-button__link:hover {
+.appointment-about__sessions
+  .appointment-about__session-card
+  .appointment-about__session-link
+  .wp-block-button__link:hover {
   background: transparent;
   color: transparent;
   box-shadow: none;
@@ -3566,10 +3663,13 @@ img.pattern_about__image {
   border-top: 2px solid var(--primary-75);
   border-right: 2px solid var(--primary-75);
   transform: rotate(45deg);
-  transition: transform 0.1s ease, border-color 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    border-color 0.1s ease;
 }
 
-.pattern_blog_posts_categories__card:hover .pattern_blog_posts_categories__card_name::after {
+.pattern_blog_posts_categories__card:hover
+  .pattern_blog_posts_categories__card_name::after {
   transform: rotate(45deg) translate(2px, -2px);
   border-color: var(--primary);
 }
@@ -3705,10 +3805,13 @@ img.pattern_about__image {
   border-top: 2px solid var(--primary-75);
   border-right: 2px solid var(--primary-75);
   transform: rotate(45deg);
-  transition: transform 0.1s ease, border-color 0.1s ease;
+  transition:
+    transform 0.1s ease,
+    border-color 0.1s ease;
 }
 
-.pattern_temoignages_categories__card:hover .pattern_temoignages_categories__card_name::after {
+.pattern_temoignages_categories__card:hover
+  .pattern_temoignages_categories__card_name::after {
   transform: rotate(45deg) translate(2px, -2px);
   border-color: var(--primary);
 }
@@ -4066,3 +4169,79 @@ details[open] .faq-accordion__icon {
   }
 }
 
+/* --- patterns/google-cta/style.css --- */
+/* Section racine */
+.pattern_google_cta {
+  background-color: var(--background);
+}
+
+/* Wrapper centré */
+.pattern_google_cta__wrapper {
+  max-width: 970px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 64px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: center;
+}
+
+/* Badge Google */
+.pattern_google_cta__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pattern_google_cta__badge svg {
+  width: 48px;
+  height: 48px;
+}
+
+.pattern_google_cta__rating {
+  font-size: 0.9rem;
+  color: var(--black);
+  margin: 0;
+}
+
+.pattern_google_cta__stars {
+  color: #fbbc05;
+}
+
+/* Texte éditorial */
+.pattern_google_cta__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pattern_google_cta__intro {
+  font-style: italic;
+  color: var(--black);
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.pattern_google_cta__body {
+  margin: 0;
+  line-height: 1.8;
+}
+
+.pattern_google_cta__body a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.pattern_google_cta__signature {
+  font-family: var(--font-heading);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.pattern_google_cta__actions {
+  display: flex;
+  justify-content: center;
+}

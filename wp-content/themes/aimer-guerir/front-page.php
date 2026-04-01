@@ -12,10 +12,10 @@
 	$render('/blocks/hero/render.php');
 	$render('/blocks/pains/render.php');
 	$render('/blocks/therapeutic-support/render.php');
-	$render('/blocks/services/render.php');
-	$render('/blocks/cta/render.php');
 	$render('/blocks/about/render.php');
 	$render('/blocks/testimonials/render.php');
+	$render('/blocks/services/render.php');
+	$render('/blocks/cta/render.php');
 	$render('/blocks/choose-practitioner/render.php');
 	$render('/blocks/newsletter/render.php');
 	?>
