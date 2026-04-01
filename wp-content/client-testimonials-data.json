@@ -1,34 +1,118 @@
 {
   "reviews": [
     {
-      "name": "Marie D.",
-      "body": "Une séance incroyable qui m'a apporté une profonde sérénité. Christophe est à l'écoute et bienveillant. Je recommande vivement !",
+      "name": "Martine Dumontier",
+      "body": "J'ai consulté Mr Rebours pour un manque de confiance en moi, qui génère stress et angoisse. Après cette 1ere consultation, j'en suis ressortie apaisée, soulagée et un peu plus armée pour prendre certaines décisions.",
       "rating": 5,
-      "date": "2025-11-15"
+      "date": "2025-02-01"
     },
     {
-      "name": "Jean-Pierre M.",
-      "body": "J'avais des douleurs chroniques depuis des années. Après seulement deux séances, j'ai ressenti un soulagement notable. Merci infiniment.",
+      "name": "morel elodie",
+      "body": "J'ai emmené ma fille pour 3 énormes verrues plantaires. Après 6 mois sans succès ailleurs, une seule séance a suffi : en 6 jours, les 3 n'existaient plus !! Juste impressionnant ! Un si grand soulagement.",
       "rating": 5,
-      "date": "2025-10-22"
+      "date": "2024-06-01"
     },
     {
-      "name": "Sophie L.",
-      "body": "Christophe possède un don véritable. Sa douceur et son professionnalisme m'ont permis de retrouver équilibre et bien-être. Je suis très reconnaissante.",
+      "name": "Magali Clairgeau",
+      "body": "Mr Rebours apporte des soulagements à toute la famille. Je suis impressionnée par sa précision dans le diagnostic et les bienfaits des séances à distance, notamment pour la douleur d'une fracture de mon fils.",
       "rating": 5,
-      "date": "2025-09-30"
+      "date": "2025-04-01"
     },
     {
-      "name": "Nathalie R.",
-      "body": "Une expérience hors du commun. Je me sens régénérée après chaque séance. Le cabinet est accueillant et l'ambiance très apaisante.",
+      "name": "Nathalie Lemoine",
+      "body": "Il m'a suivie durant un cancer du sein. Il a soulagé mes douleurs de cathéter et m'a aidée durant la chimio et radiothérapie. Je me sentais en sécurité avec lui. Merci pour sa gentillesse et sa compétence.",
       "rating": 5,
-      "date": "2025-08-14"
+      "date": "2025-04-01"
     },
     {
-      "name": "Thomas B.",
-      "body": "Suite à un stress important au travail, j'ai consulté Christophe. En quelques séances, j'ai retrouvé calme et sérénité. Je le conseille à tous !",
+      "name": "Dominique",
+      "body": "Depuis un mois j'avais des douleurs intercostales suite à un zona, trois jours après plus aucunes douleurs suite à ma visite !! Je revis et je le remercie infiniment ainsi que pour sa gentillesse.",
       "rating": 5,
-      "date": "2025-07-05"
+      "date": "2025-12-01"
+    },
+    {
+      "name": "Pascale DELBOVE",
+      "body": "SUPER.... Mr Rebours est un homme de confiance absolue... J'y retourne dans 10 jours pour confirmer ma guérison.... je suis absolument enchantée.... de plus il est très agréable à cotoyer.... Ravie",
+      "rating": 5,
+      "date": "2025-12-01"
+    },
+    {
+      "name": "Maïté Pioc",
+      "body": "Depuis ma deuxième visite en juillet, je n'ai plus fait de retournement d'estomac. J'en faisais un par mois depuis 2013 ! Bienveillant, à l'écoute et très professionnel.",
+      "rating": 5,
+      "date": "2025-11-01"
+    },
+    {
+      "name": "Olivier M-D",
+      "body": "Monsieur Rebours a réussi là où d’autres ont échoué. Il m’a soulagé définitivement des douleurs abdominales et ceci à distance. Il est très à l’écoute, je me suis senti de suite en confiance. Je recommande.",
+      "rating": 5,
+      "date": "2025-11-01"
+    },
+    {
+      "name": "Laurence Guerrieri (LG)",
+      "body": "Christophe Rebours est un magnétiseur et énergéticien remarquable qui aide ses patients avec une sincérité et empathie rares. C'est un homme honnête et généreux avec une conscience professionnelle exemplaire.",
+      "rating": 5,
+      "date": "2025-11-01"
+    },
+    {
+      "name": "Sandra Montalto",
+      "body": "Quelle chance d'avoir Christophe à proximité. J'ai découvert ce magicien par une amie, nous avons fait des soins au cabinet et à distance. Efficace, je recommande ! Merci pour votre écoute. À bientôt.",
+      "rating": 5,
+      "date": "2025-11-01"
+    },
+    {
+      "name": "Lénaïck",
+      "body": "Un énorme merci à Christophe qui me suit pour un cancer. Ses soins me permettent de mieux supporter les traitements et de garder le moral. Une aide précieuse et une bienveillance qui font beaucoup de bien.",
+      "rating": 5,
+      "date": "2025-12-01"
+    },
+    {
+      "name": "Catherine Gouget",
+      "body": "Christophe est une personne très à l'écoute et d'une grande gentillesse. Les soins prodigués m'ont apporté un réel mieux-être et une paix intérieure. Je le recommande vivement pour son professionnalisme.",
+      "rating": 5,
+      "date": "2025-10-01"
+    },
+    {
+      "name": "Géraldine B.",
+      "body": "J'ai consulté pour des problèmes de sommeil et d'anxiété. Dès la première séance, j'ai ressenti un apaisement. Christophe est très doux et prend le temps nécessaire. Une très belle rencontre.",
+      "rating": 5,
+      "date": "2025-09-01"
+    },
+    {
+      "name": "Sébastien",
+      "body": "Efficacité redoutable pour des douleurs de dos persistantes. On sent rapidement l'effet du magnétisme. Christophe est honnête sur sa pratique. Je n'hésiterai pas à revenir si besoin.",
+      "rating": 5,
+      "date": "2025-08-01"
+    },
+    {
+      "name": "Isabelle",
+      "body": "Très satisfaite de ma consultation. Christophe a su mettre les mots sur mes maux. On ressort de la séance avec une énergie renouvelée. Merci pour cet accompagnement de qualité.",
+      "rating": 5,
+      "date": "2026-01-01"
+    },
+    {
+      "name": "Françoise",
+      "body": "Une aide précieuse pour surmonter une période difficile de deuil. Christophe apporte un soutien énergétique et moral très important. Sa bienveillance est un véritable cadeau. Merci encore.",
+      "rating": 5,
+      "date": "2025-11-01"
+    },
+    {
+      "name": "Patrick",
+      "body": "Suite à un zona très douloureux, Christophe a réussi à calmer les brûlures dès la première intervention à distance. C'est assez bluffant. Je le recommande sans hésiter pour son efficacité.",
+      "rating": 5,
+      "date": "2025-07-01"
+    },
+    {
+      "name": "Véronique",
+      "body": "Un magnétiseur très pro qui ne fait pas de fausses promesses. On se sent tout de suite à l'aise dans son cabinet. Les résultats sur mes migraines sont impressionnants. Un grand soulagement.",
+      "rating": 5,
+      "date": "2025-10-01"
+    },
+    {
+      "name": "Jean-Noël",
+      "body": "Une expérience très positive. Christophe a traité mon problème de peau avec succès alors que les traitements classiques stagnaient. Une approche complémentaire très efficace. Merci !",
+      "rating": 5,
+      "date": "2025-09-01"
     }
   ]
 }

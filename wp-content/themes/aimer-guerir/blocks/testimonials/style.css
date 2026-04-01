@@ -77,7 +77,7 @@
   display: flex;
   width: max-content;
   gap: 24px;
-  animation: marquee 40s linear infinite;
+  animation: marquee 90s linear infinite;
   will-change: transform;
 }
 
