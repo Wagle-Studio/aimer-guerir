@@ -14,7 +14,7 @@
 					$back_url   = get_category_link($cat->term_id);
 					$back_label = $cat->name;
 				} else {
-					$back_url   = '/articles-et-temoignages#articles';
+					$back_url   = '/articles/';
 					$back_label = 'Articles';
 				}
 				?>

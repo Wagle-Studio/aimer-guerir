@@ -10,7 +10,7 @@ get_header();
 	<section class="temoignages-tax-archive">
 
 		<div class="temoignages-tax-archive__back-wrapper">
-			<a href="/articles-et-temoignages#temoignages" class="temoignages-tax-archive__back">
+			<a href="/temoignages/" class="temoignages-tax-archive__back">
 				← Toutes les catégories
 			</a>
 		</div>

@@ -56,7 +56,10 @@
 						<a href="<?php echo esc_url(home_url('/prendre-rendez-vous')); ?>">Prendre rendez-vous</a>
 					</li>
 					<li class="site-nav__item">
-						<a href="<?php echo esc_url(home_url('/articles-et-temoignages/')); ?>">Articles et témoignages</a>
+						<a href="<?php echo esc_url(home_url('/articles/')); ?>">Articles</a>
+					</li>
+					<li class="site-nav__item">
+						<a href="<?php echo esc_url(home_url('/temoignages/')); ?>">Témoignages</a>
 					</li>
 				</ul>
 			<?php

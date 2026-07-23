@@ -10,7 +10,7 @@ get_header();
 	<section class="articles-cat-archive">
 
 		<div class="articles-cat-archive__back-wrapper">
-			<a href="/articles-et-temoignages#articles" class="articles-cat-archive__back">
+			<a href="/articles/" class="articles-cat-archive__back">
 				← Toutes les catégories
 			</a>
 		</div>
