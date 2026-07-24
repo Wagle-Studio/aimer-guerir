@@ -446,7 +446,7 @@ add_action('init', function () {
 			'menu_name'          => 'Témoignages',
 		],
 		'public'       => true,
-		'has_archive'  => 'temoignages',
+		'has_archive'  => false,
 		'rewrite'      => ['slug' => 'temoignage'],
 		'supports'     => ['title', 'thumbnail'],
 		'show_in_rest' => false,
