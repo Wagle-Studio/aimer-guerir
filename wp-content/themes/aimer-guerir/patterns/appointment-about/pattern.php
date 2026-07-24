@@ -44,51 +44,145 @@
     </div>
     <!-- /wp:group -->
 
-    <!-- wp:group {"className":"appointment-about__sessions","layout":{"type":"default"}} -->
-    <div class="wp-block-group appointment-about__sessions">
-      <!-- wp:group {"className":"appointment-about__session-card","layout":{"type":"default"}} -->
-      <div class="wp-block-group appointment-about__session-card">
-        <!-- wp:paragraph {"className":"appointment-about__session-title"} -->
-        <p class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/hearth.php'); ?></span>Séance au cabinet</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"url":"#","className":"appointment-about__session-link"} -->
-          <div class="wp-block-button appointment-about__session-link"><a class="wp-block-button__link wp-element-button" href="#seance-cabinet">Séance au cabinet</a></div>
-          <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
-      </div>
-      <!-- /wp:group -->
+    <!-- wp:columns {"className":"appointment-about__sessions"} -->
+    <div class="wp-block-columns appointment-about__sessions">
+      <!-- wp:column {"width":"33.33%","className":"appointment-about__session-card"} -->
+      <div class="wp-block-column appointment-about__session-card" style="flex-basis:33.33%">
+        <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"appointment-about__session-image"} -->
+        <figure class="wp-block-image size-large appointment-about__session-image">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/pattern-placeholder-400.svg')); ?>" alt="" />
+        </figure>
+        <!-- /wp:image -->
 
-      <!-- wp:group {"className":"appointment-about__session-card","layout":{"type":"default"}} -->
-      <div class="wp-block-group appointment-about__session-card">
-        <!-- wp:paragraph {"className":"appointment-about__session-title"} -->
-        <p class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/remote.php'); ?></span>Séance à distance</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"url":"#","className":"appointment-about__session-link"} -->
-          <div class="wp-block-button appointment-about__session-link"><a class="wp-block-button__link wp-element-button" href="#seance-distance">Séance à distance</a></div>
-          <!-- /wp:button -->
-        </div>
-        <!-- /wp:buttons -->
-      </div>
-      <!-- /wp:group -->
+        <!-- wp:group {"className":"appointment-about__session-body","layout":{"type":"default"}} -->
+        <div class="wp-block-group appointment-about__session-body">
+          <!-- wp:heading {"level":3,"className":"appointment-about__session-title"} -->
+          <h3 class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/hearth.php'); ?></span>Séance au cabinet</h3>
+          <!-- /wp:heading -->
 
-      <!-- wp:group {"className":"appointment-about__session-card","layout":{"type":"default"}} -->
-      <div class="wp-block-group appointment-about__session-card">
-        <!-- wp:paragraph {"className":"appointment-about__session-title"} -->
-        <p class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/home-visit.php'); ?></span>Séance à domicile</p>
-        <!-- /wp:paragraph -->
-        <!-- wp:buttons -->
-        <div class="wp-block-buttons"><!-- wp:button {"url":"#","className":"appointment-about__session-link"} -->
-          <div class="wp-block-button appointment-about__session-link"><a class="wp-block-button__link wp-element-button" href="#seance-domicile">Séance à domicile</a></div>
-          <!-- /wp:button -->
+          <!-- wp:paragraph {"className":"appointment-about__session-price"} -->
+          <p class="appointment-about__session-price">Prix d'une séance : 50 €</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Accueil au cabinet sur rendez-vous uniquement.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Règlement en espèces, carte bancaire ou chèque à l'ordre de « Aimer Guérir »</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:group {"className":"appointment-about__session-actions","layout":{"type":"default"}} -->
+          <div class="wp-block-group appointment-about__session-actions">
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons">
+              <!-- wp:button {"className":"btn--secondary"} -->
+              <div class="wp-block-button btn--secondary">
+                <a class="wp-block-button__link btn" href="#">Prendre rendez-vous au cabinet</a>
+              </div>
+              <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+          </div>
+          <!-- /wp:group -->
         </div>
-        <!-- /wp:buttons -->
+        <!-- /wp:group -->
       </div>
-      <!-- /wp:group -->
+      <!-- /wp:column -->
+
+      <!-- wp:column {"width":"33.33%","className":"appointment-about__session-card"} -->
+      <div class="wp-block-column appointment-about__session-card" style="flex-basis:33.33%">
+        <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"appointment-about__session-image"} -->
+        <figure class="wp-block-image size-large appointment-about__session-image">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/pattern-placeholder-400.svg')); ?>" alt="" />
+        </figure>
+        <!-- /wp:image -->
+
+        <!-- wp:group {"className":"appointment-about__session-body","layout":{"type":"default"}} -->
+        <div class="wp-block-group appointment-about__session-body">
+          <!-- wp:heading {"level":3,"className":"appointment-about__session-title"} -->
+          <h3 class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/remote.php'); ?></span>Séance à distance</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-price"} -->
+          <p class="appointment-about__session-price">Prix d'une séance : 50 €</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Je vous remercie de m'adresser à l'adresse email contact@aimerguerir.com une photo récente de votre visage (sans lunettes de soleil) afin que je puisse me connecter à votre champ énergétique.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">A l'heure convenue, je vous contacterai par téléphone afin que vous m'exposiez votre problématique. Puis, je réaliserai le travail énergétique nécessaire. Préparer un kit main libre si vous utilisez un portable.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Le paiement s'effectue par carte bancaire AVANT la séance. Une séance non réglée ne peut être honorée.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:group {"className":"appointment-about__session-actions","layout":{"type":"default"}} -->
+          <div class="wp-block-group appointment-about__session-actions">
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons">
+              <!-- wp:button {"className":"btn--secondary"} -->
+              <div class="wp-block-button btn--secondary">
+                <a class="wp-block-button__link btn" href="#">Prendre rendez-vous à distance</a>
+              </div>
+              <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
+
+      <!-- wp:column {"width":"33.33%","className":"appointment-about__session-card"} -->
+      <div class="wp-block-column appointment-about__session-card" style="flex-basis:33.33%">
+        <!-- wp:image {"sizeSlug":"large","linkDestination":"none","className":"appointment-about__session-image"} -->
+        <figure class="wp-block-image size-large appointment-about__session-image">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/pattern-placeholder-400.svg')); ?>" alt="" />
+        </figure>
+        <!-- /wp:image -->
+
+        <!-- wp:group {"className":"appointment-about__session-body","layout":{"type":"default"}} -->
+        <div class="wp-block-group appointment-about__session-body">
+          <!-- wp:heading {"level":3,"className":"appointment-about__session-title"} -->
+          <h3 class="appointment-about__session-title"><span><?php include get_theme_file_path('assets/icons/home-visit.php'); ?></span>Séance à domicile</h3>
+          <!-- /wp:heading -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-price"} -->
+          <p class="appointment-about__session-price">Prix d'une séance : 70 €</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Je me déplace uniquement sur la Commune de Vernon pour les personnes ne pouvant pas venir au cabinet. Réservations uniquement par téléphone au 06 95 64 54 76.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:paragraph {"className":"appointment-about__session-text"} -->
+          <p class="appointment-about__session-text">Le paiement peut se faire en espèces ou par chèque à l'ordre de « AIMER GUÉRIR ». Merci de réserver pour le bon déroulement de la séance un espace calme et propre.</p>
+          <!-- /wp:paragraph -->
+
+          <!-- wp:group {"className":"appointment-about__session-actions","layout":{"type":"default"}} -->
+          <div class="wp-block-group appointment-about__session-actions">
+            <!-- wp:buttons -->
+            <div class="wp-block-buttons">
+              <!-- wp:button {"className":"btn--secondary"} -->
+              <div class="wp-block-button btn--secondary">
+                <a class="wp-block-button__link btn" href="#">Téléphonez moi pour réserver une séance</a>
+              </div>
+              <!-- /wp:button -->
+            </div>
+            <!-- /wp:buttons -->
+          </div>
+          <!-- /wp:group -->
+        </div>
+        <!-- /wp:group -->
+      </div>
+      <!-- /wp:column -->
     </div>
-    <!-- /wp:group -->
+    <!-- /wp:columns -->
   </div>
   <!-- /wp:group -->
 </section>

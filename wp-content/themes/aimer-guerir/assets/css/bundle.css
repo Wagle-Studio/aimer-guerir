@@ -21,8 +21,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf")
-    format("truetype");
+  src: url("../fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;
@@ -30,8 +29,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
   font-weight: 400 900;
   font-style: normal;
   font-display: swap;
@@ -39,8 +37,7 @@
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf")
-    format("truetype");
+  src: url("../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 400 900;
   font-style: italic;
   font-display: swap;
@@ -53,21 +50,21 @@
   --font-body:
     "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 
-  --primary: #a40027;
+  --primary:    #a40027;
   --primary-05: #b7273c05;
   --primary-15: #b7273c15;
   --primary-25: #b7273c25;
   --primary-50: #b7273c50;
   --primary-75: #b7273c75;
 
-  --beige: #e8e4df;
-  --cream: #f5efe6;
-  --black: #2d2926;
-  --white: #fffdf9;
+  --beige:      #e8e4df;
+  --cream:      #f5efe6;
+  --black:      #2d2926;
+  --white:      #fffdf9;
   --background: #faf6f0;
 
   --picture-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.18);
-  --card-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  --card-shadow:    0px 4px 20px 0px rgba(0, 0, 0, 0.08);
 
   --header-height: 160px;
 }
@@ -255,9 +252,7 @@ button {
   font-weight: 600;
   text-align: center;
   width: 100%;
-  transition:
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn:hover {
@@ -357,12 +352,7 @@ table {
   border: 2px solid var(--primary);
   background: var(--primary);
   color: var(--white);
-  transition:
-    background-color 0.1s ease,
-    color 0.1s ease,
-    border-color 0.1s ease,
-    transform 0.15s ease,
-    box-shadow 0.15s ease;
+  transition: background-color 0.1s ease, color 0.1s ease, border-color 0.1s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .wp-block-button__link:hover {
@@ -1769,12 +1759,8 @@ html.js .site-nav.is-open .site-nav__menu {
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
 .testimonials__list {
@@ -1787,7 +1773,7 @@ html.js .site-nav.is-open .site-nav__menu {
   display: flex;
   width: max-content;
   gap: 24px;
-  animation: marquee 40s linear infinite;
+  animation: marquee 90s linear infinite;
   will-change: transform;
 }
 
@@ -2217,9 +2203,7 @@ html.js .site-nav.is-open .site-nav__menu {
   border-radius: 3px;
   border: 1px solid var(--primary-50);
   background: var(--white);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .newsletter__input:focus {
@@ -2551,539 +2535,6 @@ img.pattern_about__image {
   }
 }
 
-/* --- patterns/appointment-session-clinic/style.css --- */
-.appointment-cta__session-band--clinic {
-  width: 100%;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 80px 24px;
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: left;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__bento {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: max-content;
-  padding: 24px;
-  background-color: var(--white);
-  border-radius: 3px;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-content > p {
-  text-align: justify;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-content
-  > p:first-of-type {
-  font-weight: 600;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-content__title {
-  position: relative;
-  width: max-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-content__title
-  span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--primary-75);
-  flex: 0 0 auto;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-content__title
-  span
-  svg {
-  width: 18px;
-  height: 18px;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-content__title::after {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 100%;
-  height: 5px;
-  background-color: var(--primary-75);
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-media {
-  width: 100%;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__map {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 3px;
-  overflow: hidden;
-  border: 1px solid var(--primary-15);
-  background: var(--primary-05);
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__map iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-gallery-row {
-  display: none;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-gallery {
-  display: flex;
-  gap: 24px;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-gallery-item {
-  flex: 1 1 0;
-  min-width: 0;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-image {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0;
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-image:hover
-  img {
-  transform: scale(1.04);
-}
-
-.appointment-cta__session-band--clinic .appointment-cta__session-actions {
-  margin-top: 24px;
-}
-
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-actions
-  .wp-block-buttons,
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-actions
-  .wp-block-button,
-.appointment-cta__session-band--clinic
-  .appointment-cta__session-actions
-  .wp-block-button__link {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .appointment-cta__session-band--clinic .appointment-cta__bento {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    column-gap: 24px;
-    row-gap: 48px;
-  }
-
-  .appointment-cta__session-band--clinic .appointment-cta__session-content {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--clinic .appointment-cta__session-media {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--clinic
-    .appointment-cta__session-actions
-    .wp-block-buttons,
-  .appointment-cta__session-band--clinic
-    .appointment-cta__session-actions
-    .wp-block-button,
-  .appointment-cta__session-band--clinic
-    .appointment-cta__session-actions
-    .wp-block-button__link {
-    width: max-content;
-    display: inline-block;
-  }
-
-  .appointment-cta__session-band--clinic .appointment-cta__session-gallery-row {
-    display: block;
-    grid-column: 1 / 3;
-    grid-row: 2;
-  }
-
-  .appointment-cta__session-band--clinic .appointment-cta__map {
-    aspect-ratio: unset;
-    height: 100%;
-  }
-}
-
-/* --- patterns/appointment-session-distance/style.css --- */
-.appointment-cta__session-band--distance {
-  width: 100%;
-  background-color: var(--cream);
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 80px 24px;
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: left;
-}
-
-.appointment-cta__session-band--distance .appointment-cta__bento {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: max-content;
-  padding: 24px;
-  background-color: var(--white);
-  border-radius: 3px;
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-content > p {
-  text-align: justify;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-content
-  > p:first-of-type {
-  font-weight: 600;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-content__title {
-  position: relative;
-  width: max-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-content__title
-  span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--primary-75);
-  flex: 0 0 auto;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-content__title
-  span
-  svg {
-  width: 18px;
-  height: 18px;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-content__title::after {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 100%;
-  height: 5px;
-  background-color: var(--primary-75);
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-media {
-  width: 100%;
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0;
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-image:hover
-  img {
-  transform: scale(1.04);
-}
-
-.appointment-cta__session-band--distance .appointment-cta__session-actions {
-  margin-top: 24px;
-}
-
-.appointment-cta__session-band--distance
-  .appointment-cta__session-actions
-  .wp-block-buttons,
-.appointment-cta__session-band--distance
-  .appointment-cta__session-actions
-  .wp-block-button,
-.appointment-cta__session-band--distance
-  .appointment-cta__session-actions
-  .wp-block-button__link {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .appointment-cta__session-band--distance .appointment-cta__bento {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    column-gap: 24px;
-    row-gap: 48px;
-  }
-
-  .appointment-cta__session-band--distance .appointment-cta__session-content {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--distance .appointment-cta__session-media {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--distance
-    .appointment-cta__session-actions
-    .wp-block-buttons,
-  .appointment-cta__session-band--distance
-    .appointment-cta__session-actions
-    .wp-block-button,
-  .appointment-cta__session-band--distance
-    .appointment-cta__session-actions
-    .wp-block-button__link {
-    width: max-content;
-    display: inline-block;
-  }
-
-  .appointment-cta__session-band--distance .appointment-cta__session-image {
-    aspect-ratio: unset;
-    height: 100%;
-  }
-}
-
-/* --- patterns/appointment-session-home/style.css --- */
-.appointment-cta__session-band--home {
-  width: 100%;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  padding: 80px 24px;
-  max-width: 1280px;
-  margin: 0 auto;
-  width: 100%;
-  text-align: left;
-}
-
-.appointment-cta__session-band--home .appointment-cta__bento {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-content {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  height: max-content;
-  padding: 24px;
-  background-color: var(--white);
-  border-radius: 3px;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-content > p {
-  text-align: justify;
-}
-
-.appointment-cta__session-band--home
-  .appointment-cta__session-content
-  > p:first-of-type {
-  font-weight: 600;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-content__title {
-  position: relative;
-  width: max-content;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 16px;
-}
-
-.appointment-cta__session-band--home
-  .appointment-cta__session-content__title
-  span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--primary-75);
-  flex: 0 0 auto;
-}
-
-.appointment-cta__session-band--home
-  .appointment-cta__session-content__title
-  span
-  svg {
-  width: 18px;
-  height: 18px;
-}
-
-.appointment-cta__session-band--home
-  .appointment-cta__session-content__title::after {
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 100%;
-  height: 5px;
-  background-color: var(--primary-75);
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-media {
-  width: 100%;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-image {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 3px;
-  overflow: hidden;
-  margin: 0;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.4s ease;
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-image:hover img {
-  transform: scale(1.04);
-}
-
-.appointment-cta__session-band--home .appointment-cta__session-actions {
-  margin-top: 24px;
-}
-
-.appointment-cta__session-band--home
-  .appointment-cta__session-actions
-  .wp-block-buttons,
-.appointment-cta__session-band--home
-  .appointment-cta__session-actions
-  .wp-block-button,
-.appointment-cta__session-band--home
-  .appointment-cta__session-actions
-  .wp-block-button__link {
-  width: 100%;
-  display: block;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .appointment-cta__session-band--home .appointment-cta__bento {
-    display: grid;
-    grid-template-columns: 1fr 400px;
-    column-gap: 24px;
-    row-gap: 48px;
-  }
-
-  .appointment-cta__session-band--home .appointment-cta__session-content {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--home .appointment-cta__session-media {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .appointment-cta__session-band--home
-    .appointment-cta__session-actions
-    .wp-block-buttons,
-  .appointment-cta__session-band--home
-    .appointment-cta__session-actions
-    .wp-block-button,
-  .appointment-cta__session-band--home
-    .appointment-cta__session-actions
-    .wp-block-button__link {
-    width: max-content;
-    display: inline-block;
-  }
-
-  .appointment-cta__session-band--home .appointment-cta__session-image {
-    aspect-ratio: unset;
-    height: 100%;
-  }
-}
-
 /* --- patterns/appointment-cta/style.css --- */
 .pattern_appointment_cta {
   background: var(--primary);
@@ -3184,9 +2635,7 @@ img.pattern_about__image {
   border-radius: 3px;
   border: 1px solid var(--primary-50);
   background: var(--white);
-  transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pattern-newsletter .newsletter__input:focus {
@@ -3275,68 +2724,37 @@ img.pattern_about__image {
 .appointment-about__sessions {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
   margin-top: 24px;
 }
 
 .appointment-about__session-card {
-  position: relative;
   display: flex;
-  align-items: center;
-  padding: 16px 20px;
-  border-radius: 3px;
+  flex-direction: column;
+  flex: 1 1 100% !important;
   background-color: var(--white);
-  transition: border-color 0.1s ease;
+  border-radius: 3px;
+  overflow: hidden;
 }
 
-.appointment-about__session-card::after {
-  content: "";
-  display: block;
-  flex-shrink: 0;
-  margin-left: auto;
-  width: 8px;
-  height: 8px;
-  border-top: 2px solid var(--primary-75);
-  border-right: 2px solid var(--primary-75);
-  transform: rotate(45deg);
-  transition: transform 0.1s ease;
-}
-
-.appointment-about__session-card:has(a:hover)::after {
-  transform: rotate(45deg) translate(2px, -2px);
-  border-top: 2px solid var(--primary);
-  border-right: 2px solid var(--primary);
-}
-
-.appointment-about__session-card:has(a:hover) {
-  border-color: var(--primary-75);
-}
-
-.appointment-about__session-card .wp-block-buttons {
-  position: static;
+.appointment-about__session-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
   margin: 0;
 }
 
-.appointment-about__session-link .wp-block-button__link {
-  position: absolute;
-  inset: 0;
-  background: transparent;
-  color: transparent;
-  font-size: 0;
-  border-radius: 6px;
-  z-index: 1;
-  padding: 0;
-  min-height: 0;
-  box-shadow: none;
+.appointment-about__session-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.appointment-about__sessions
-  .appointment-about__session-card
-  .appointment-about__session-link
-  .wp-block-button__link:hover {
-  background: transparent;
-  color: transparent;
-  box-shadow: none;
+.appointment-about__session-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
 }
 
 .appointment-about__session-title {
@@ -3366,6 +2784,32 @@ img.pattern_about__image {
   height: 18px;
 }
 
+.appointment-about__session-price {
+  margin: 0;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.appointment-about__session-text {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--black);
+  text-align: justify;
+}
+
+.appointment-about__session-actions {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.appointment-about__session-actions .wp-block-buttons,
+.appointment-about__session-actions .wp-block-button,
+.appointment-about__session-actions .wp-block-button__link {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
 .appointment-about__text {
   margin: 0;
   font-size: 18px;
@@ -3377,10 +2821,11 @@ img.pattern_about__image {
 @media screen and (min-width: 768px) {
   .appointment-about__sessions {
     flex-direction: row;
+    align-items: stretch;
   }
 
   .appointment-about__session-card {
-    flex: 1;
+    flex: 1 1 0 !important;
   }
 }
 
@@ -3663,13 +3108,10 @@ img.pattern_about__image {
   border-top: 2px solid var(--primary-75);
   border-right: 2px solid var(--primary-75);
   transform: rotate(45deg);
-  transition:
-    transform 0.1s ease,
-    border-color 0.1s ease;
+  transition: transform 0.1s ease, border-color 0.1s ease;
 }
 
-.pattern_blog_posts_categories__card:hover
-  .pattern_blog_posts_categories__card_name::after {
+.pattern_blog_posts_categories__card:hover .pattern_blog_posts_categories__card_name::after {
   transform: rotate(45deg) translate(2px, -2px);
   border-color: var(--primary);
 }
@@ -3805,13 +3247,10 @@ img.pattern_about__image {
   border-top: 2px solid var(--primary-75);
   border-right: 2px solid var(--primary-75);
   transform: rotate(45deg);
-  transition:
-    transform 0.1s ease,
-    border-color 0.1s ease;
+  transition: transform 0.1s ease, border-color 0.1s ease;
 }
 
-.pattern_temoignages_categories__card:hover
-  .pattern_temoignages_categories__card_name::after {
+.pattern_temoignages_categories__card:hover .pattern_temoignages_categories__card_name::after {
   transform: rotate(45deg) translate(2px, -2px);
   border-color: var(--primary);
 }
@@ -4207,7 +3646,7 @@ details[open] .faq-accordion__icon {
 }
 
 .pattern_google_cta__stars {
-  color: #fbbc05;
+  color: #FBBC05;
 }
 
 /* Texte éditorial */
@@ -4245,3 +3684,4 @@ details[open] .faq-accordion__icon {
   display: flex;
   justify-content: center;
 }
+
